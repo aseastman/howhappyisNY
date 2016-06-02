@@ -6,7 +6,7 @@ env HADOOP_CONF_DIR=/opt/mapr/hadoop/hadoop-2.7.0/etc/hadoop SPARK_HOME=/opt/map
 /home/user03/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.6.0-models.jar,\
 /home/user03/.ivy2/cache/com.typesafe.play/play-ws_2.10/jars/play-ws_2.10-2.4.3.jar,\
 /home/user03/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar,\
-/home/user03/how_happy_is_NY/howhappyisNY/lib/twitter4j-stream-4.0.4.jar,\
+/home/user03/.ivy2/cache/org.twitter4j/twitter4j-stream/jars/twitter4j-stream-4.0.4.jar,\
 /home/user03/.ivy2/cache/org.twitter4j/twitter4j-core/jars/twitter4j-core-4.0.4.jar,\
 /home/user03/.ivy2/cache/io.netty/netty/bundles/netty-3.10.1.Final.jar,\
 /home/user03/.ivy2/cache/org.jboss.netty/netty/bundles/netty-3.2.2.Final.jar,\

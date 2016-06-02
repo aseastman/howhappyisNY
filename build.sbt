@@ -18,10 +18,6 @@ libraryDependencies ++= Seq(
   "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0" classifier "models"
 )
 
-dependencyOverrides += "org.apache.httpcomponents" % "httpclient" % "4.5.2"
-
-dependencyOverrides += "org.apache.httpcomponents" % "httpcore" % "4.4.4"
-
 dependencyOverrides += "io.netty" % "netty" % "3.10.1.Final"
 
 lazy val root = (project in file("."))
