@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-hive" % spark_version,
   "org.apache.spark" % "spark-streaming-twitter_2.10" % spark_version,
   "org.apache.spark" % "spark-streaming_2.10" % spark_version,
-  "edu.stanford.nlp" % "stanford-corenlp" % "3.5.2",
-  "edu.stanford.nlp" % "stanford-corenlp" % "3.5.2" classifier "models"
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.4.1",
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.4.1" classifier "models"
 )
 
 dependencyOverrides += "io.netty" % "netty" % "3.10.1.Final"
