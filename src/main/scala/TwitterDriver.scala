@@ -45,7 +45,7 @@ object TwitterDriver {
     val tweets : DStream[Status] = TwitterUtils.createStream(ssc, Option(auth),filters)
 
 
-    tweets.window(Minutes(5),Seconds(30)).foreachRDD{ tweetRDD =>
+    tweets.window(Minutes(5),Seconds(10)).foreachRDD{ tweetRDD =>
       tweetRDD.foreach{tweet =>
           val lang = tweet.getUser.getLang
         if (lang == "en") {
