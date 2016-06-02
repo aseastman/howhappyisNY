@@ -69,7 +69,7 @@ object TwitterDriver {
 //            "Very Positive"
 //          } else "Not Understood"
 //          if (sentiment > 0.0) {
-//            println(s"$username is $sentiment has tweeted '$text' ($textCount words) and has $friends friends.")
+            println(s"$username is ${sentiment/4.0}% happy, has tweeted '$text' ($textCount words) and has $friends friends.")
             sentimentValues = sentimentValues + sentiment
             counter = counter + 1
 //          }
