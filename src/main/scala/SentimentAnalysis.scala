@@ -24,7 +24,7 @@ object SentimentAnalysis {
     var sentiments : ListBuffer[Double] = ListBuffer()
 
     for (sentence <- annotation.get(classOf[CoreAnnotations.SentencesAnnotation])) {
-      val tree = sentence.get(classOf[SentimentCoreAnnotations.SentimentAnnotatedTree])
+      val tree = sentence.get(classOf[SentimentCoreAnnotations.AnnotatedTree])
       val sentiment = RNNCoreAnnotations.getPredictedClass(tree)
 
       sentiments += sentiment.toDouble
