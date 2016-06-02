@@ -74,9 +74,9 @@ object TwitterDriver {
           }
         }
       }
-      val avgSentiment = sentimentValues.sum/counter.toDouble
+      val avgSentiment : Double = sentimentValues.sum/counter.toDouble
 
-      println(s"The average sentiment is $avgSentiment")
+      println(s"The average sentiment is $avgSentiment and the sentiment total is ${sentimentValues.sum} and the count is $counter")
 
       scala.tools.nsc.io.File("sentiment.txt").writeAll(avgSentiment.toString)
 
