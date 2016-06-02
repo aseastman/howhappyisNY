@@ -36,7 +36,7 @@ object SentimentAnalysis {
       sentiments.sum/sentiments.length.toDouble
     }
 
-    println(weightedSentiment)
+//    println(weightedSentiment)
     weightedSentiment
 
   }
