@@ -78,7 +78,9 @@ object TwitterDriver {
 
       println(s"The average sentiment is $avgSentiment")
 
-      println(owu.getWeather("New York"))
+      scala.tools.nsc.io.File("sentiment.txt").writeAll(avgSentiment.toString)
+
+//      println(owu.getWeather("New York"))
 
       sentimentValues = ArrayBuffer.empty[Double]
       counter = 0
