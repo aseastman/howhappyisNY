@@ -1,6 +1,5 @@
 #!/bin/sh
 env HADOOP_CONF_DIR=/opt/mapr/hadoop/hadoop-2.7.0/etc/hadoop SPARK_HOME=/opt/mapr/spark/spark-1.6.1 /opt/mapr/spark/spark-1.6.1/bin/spark-submit \
---master yarn-client \
 --conf spark.akka.frameSize=200 \
 --jars /home/user03/.ivy2/cache/org.apache.spark/spark-streaming-twitter_2.10/jars/spark-streaming-twitter_2.10-1.5.0.jar,\
 /home/user03/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.6.0.jar,\

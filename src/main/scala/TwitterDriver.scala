@@ -16,7 +16,7 @@ import scala.io.Source
 object TwitterDriver {
 
   def main(args: Array[String]) : Unit = {
-    val conf = new SparkConf()
+    val conf = new SparkConf().setMaster("local[2]")
 //      .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
 
     val sc  = new SparkContext(conf)
