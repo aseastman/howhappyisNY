@@ -24,9 +24,9 @@ dependencyOverrides += "org.apache.httpcomponents" % "httpcore" % "4.4.4"
 
 dependencyOverrides += "io.netty" % "netty" % "3.10.1.Final"
 
-dependencyOverrides += "org.twitter4j" % "twitter4j" % "twitter4j-core-4.0.4"
+dependencyOverrides += "org.twitter4j" % "twitter4j" % "twitter4j-core-3.0.3"
 
-dependencyOverrides += "org.twitter4j" % "twitter4j" % "twitter4j-stream-4.0.4"
+dependencyOverrides += "org.twitter4j" % "twitter4j" % "twitter4j-stream-3.0.3"
 
 lazy val root = (project in file("."))
   .settings(
