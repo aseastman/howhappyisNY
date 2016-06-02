@@ -4,8 +4,8 @@
 /opt/mapr/spark/spark-1.6.1/bin/spark-submit \
 --conf spark.akka.frameSize=200 \
 --jars /home/user03/.ivy2/cache/org.apache.spark/spark-streaming-twitter_2.10/jars/spark-streaming-twitter_2.10-1.6.1.jar,\
-/home/user03/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.6.0.jar,\
-/home/user03/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.6.0-models.jar,\
+/home/user03/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.5.2.jar,\
+/home/user03/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.5.2-models.jar,\
 /home/user03/.ivy2/cache/com.typesafe.play/play-ws_2.10/jars/play-ws_2.10-2.4.3.jar,\
 /home/user03/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar,\
 /home/user03/.ivy2/cache/org.twitter4j/twitter4j-stream/jars/twitter4j-stream-4.0.4.jar,\
