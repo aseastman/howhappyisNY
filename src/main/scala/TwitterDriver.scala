@@ -36,8 +36,7 @@ object TwitterDriver {
       .setOAuthAccessTokenSecret(accessTokenSecret)
 
     val auth : Authorization = AuthorizationFactory.getInstance(cb.build())
-    var sentimentValues : Double = 0.0
-    var counter : Long = 0
+
 
 
     val filters : Array[String] = Array("#NY")
@@ -46,6 +45,8 @@ object TwitterDriver {
 
 
     tweets.window(Minutes(5),Seconds(10)).foreachRDD{ tweetRDD =>
+      var sentimentValues : Double = 0.0
+      var counter : Long = 0
       tweetRDD.foreach{tweet =>
           val lang = tweet.getUser.getLang
         if (lang == "en") {
@@ -68,7 +69,7 @@ object TwitterDriver {
 //            "Very Positive"
 //          } else "Not Understood"
 //          if (sentiment > 0.0) {
-            println(s"$username is $sentiment has tweeted '$text' ($textCount words) and has $friends friends.")
+//            println(s"$username is $sentiment has tweeted '$text' ($textCount words) and has $friends friends.")
             sentimentValues = sentimentValues + sentiment
             counter = counter + 1
 //          }
@@ -76,14 +77,14 @@ object TwitterDriver {
       }
       val avgSentiment : Double = sentimentValues/counter.toDouble
 
-      println(s"The average sentiment is $avgSentiment and the sentiment total is ${sentimentValues} and the count is $counter")
+      println(s"The average sentiment is $avgSentiment")
 
       scala.tools.nsc.io.File("sentiment.txt").writeAll(avgSentiment.toString)
 
 //      println(owu.getWeather("New York"))
 
-      sentimentValues = 0.0
-      counter = 0
+//      sentimentValues = 0.0
+//      counter = 0
     }
     ssc.start()
     ssc.awaitTermination()
