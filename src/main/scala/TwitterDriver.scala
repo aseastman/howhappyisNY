@@ -17,7 +17,7 @@ object TwitterDriver {
 
   def main(args: Array[String]) : Unit = {
     val conf = new SparkConf()
-      .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+//      .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
 
     val sc  = new SparkContext(conf)
     val ssc = new StreamingContext(sc,Seconds(5))
