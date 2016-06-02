@@ -9,3 +9,4 @@ gen
 target
 project
 # Created by .ignore support plugin (hsz.mobi)
+/src/main/scala/config.scala
