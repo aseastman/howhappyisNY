@@ -40,7 +40,7 @@ object TwitterDriver {
     var counter : Long = 0
 
 
-    val filters : Array[String] = Array("#NY","#New York","#Manhattan")
+    val filters : Array[String] = Array("#NY")
 
     val tweets : DStream[Status] = TwitterUtils.createStream(ssc, Option(auth),filters)
 
