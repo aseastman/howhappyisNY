@@ -4,7 +4,7 @@ resolvers ++= Seq("mvnrepository" at "http://mvnrepository.com/artifact/",
   "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/",
   "Cloudera Repository" at "https://repository.cloudera.com/artifactory/cloudera-repos/")
 
-val spark_version = "1.5.0"
+val spark_version = "1.6.1"
 
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play-ws" % "2.4.3",
