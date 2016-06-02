@@ -37,7 +37,8 @@ object TwitterDriver {
 
     val auth : Authorization = AuthorizationFactory.getInstance(cb.build())
 
-
+    var sentimentValues : Double = 0.0
+    var counter : Long = 0
 
     val filters : Array[String] = Array("#NY")
 
@@ -45,8 +46,7 @@ object TwitterDriver {
 
 
     tweets.window(Minutes(5),Seconds(10)).foreachRDD{ tweetRDD =>
-      var sentimentValues : Double = 0.0
-      var counter : Long = 0
+
       tweetRDD.foreach{tweet =>
           val lang = tweet.getUser.getLang
         if (lang == "en") {
