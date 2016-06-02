@@ -78,7 +78,6 @@ object TwitterDriver {
 
       println(s"The average sentiment is $avgSentiment")
 
-
       println(owu.getWeather("New York"))
 
       sentimentValues = ArrayBuffer.empty[Double]
